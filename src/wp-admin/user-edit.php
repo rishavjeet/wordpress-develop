@@ -530,6 +530,10 @@ switch ( $action ) {
 								$public_display = array_map( 'trim', $public_display );
 								$public_display = array_unique( $public_display );
 
+								// var_dump( $public_display );
+								// var_dump( $profile_user->display_name, "fjgjwig" );
+								// wp_die();
+
 								?>
 								<?php foreach ( $public_display as $id => $item ) : ?>
 									<option <?php selected( $profile_user->display_name, $item ); ?>><?php echo $item; ?></option>
